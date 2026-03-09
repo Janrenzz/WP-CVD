@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
     name="description" 
-    content="This is the official website of Creative Visual Design"
+    content="<?php echo blogInfo('description') ?>"
     />
-    <title>Creative Visual Design</title>
+    <title><?php is_front_page() ? blogInfo('title') : wp_title("") ?></title>
     <?php wp_head(); ?>
 </head>
 <body>
